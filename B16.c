@@ -1,4 +1,4 @@
-/*Write a program to accept a number and check whether the number is divisible by 3 as
+   /*Write a program to accept a number and check whether the number is divisible by 3 as
 well as 5. Otherwise, decide:
 (a) Is the number divisible by 3 and not by 5?
 (b) Is the number divisible by 5 and not by 3?
