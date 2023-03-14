@@ -29,19 +29,19 @@ int main ()
     }
             else if (T>=10 && T<20)
             {
-                printf("Cold whether");
+                printf("Cold whether\n");
             }
                     else if (T>=20 && T<30)
                     {
-                        printf ("Normal");
+                        printf ("Normal in Temp.\n");
                     }
                             else if (T>=30 && T<40)
                             {
-                                printf("Hot");
+                                printf("Its Hot\n");
                             }
-                                    else if (T>=40)
+                                    else
                                     {
-                                        printf("Very Hot");
+                                        printf("Its Very Hot Weather\n");
                                     }
     return 0;
 }

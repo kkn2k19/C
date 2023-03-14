@@ -7,30 +7,30 @@
 
 #include <stdio.h>
 
-
 int main ()
 {
-    int sa, com1, com2, com3;
+    int sa;
+    float com;
     printf("Provide the Sale Amount : ");
     scanf("%d", &sa);
     if (sa < 500)
     {
-        printf ("Commission : Rs. 35");
+        printf ("Commission : Rs. 35\n");
     }
     else if (sa >= 500 && sa <=2000)
     {
-        com1 = 0.1*sa;
-        printf ("Commission : %d", com1);
+        com = 0.1*sa;
+        printf ("Commission : %f\n", com);
     }
             else if (sa >= 2001 && sa<= 5000)
             {
-                com2 = 0.15*sa;
-                printf ("Commission : %d", com2);
+                com = 0.15*sa;
+                printf ("Commission : %f\n", com);
             }
-                    else if (sa>5000)
+                    else 
                     {
-                        com3 = 0.2*sa;
-                        printf ("Commission : %d", com3);
+                        com = 0.2*sa;
+                        printf ("Commission : %f\n", com);
                     }
     return 0;
 }

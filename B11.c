@@ -15,11 +15,11 @@ int main ()
     b=a%2;
     if (b==0)
     {
-        printf("even");
+        printf("The number is even\n");
     }
     else
     {
-        printf("odd");
+        printf("The number is odd\n");
     }
     return 0;
 }

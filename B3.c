@@ -6,18 +6,18 @@ int main()
 {
     int a,b,c;
     printf ("Provide all sides of a triangle:");
-    scanf ("%d%d%d", &a, &b, &c);
+    scanf ("%d %d %d", &a, &b, &c);
     if (a==b && a==c && b==c)
     {
-        printf("equilateral");
+        printf("Equilateral Triangle\n");
     }
     else if (a!=b && b!=c && c!=a)
     {
-        printf ("scalene");
+        printf ("Scalene Triangle\n");
     }
     else 
     {
-        printf("isoceles");
+        printf("Isoceles Triangle\n");
     }
     return 0;
 }

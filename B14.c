@@ -14,19 +14,19 @@ int main ()
     printf("provide distance travelled: ");
     scanf ("%d", &distance);
     if (distance<=10){
-        printf("fare : Rs.80");
+        printf("fare : Rs.80\n");
     }
     else if (distance>=11 && distance<=20){
         fare1 = distance * 6;
-        printf("fare : %d", fare1); 
+        printf("fare : %d\n", fare1); 
     }
     else if (distance >= 21 && distance <=30){
         fare2= distance * 5;
-        printf("fare : %d", fare2);
+        printf("fare : %d\n", fare2);
     }
     else if (distance >=31) {
         fare3 = distance * 4;
-        printf("fare : %d", fare3);
+        printf("fare : %d\n", fare3);
     }
     return 0;
 }
