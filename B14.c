@@ -10,23 +10,23 @@ Up to 10 km Fixed charge ₹80
 
 int main ()
 {
-    int distance, fare;
+    int distance, fare1, fare2, fare3;
     printf("provide distance travelled: ");
     scanf ("%d", &distance);
     if (distance<=10){
         printf("fare : Rs.80\n");
     }
     else if (distance>=11 && distance<=20){
-        fare = distance * 6;
-        printf("fare : %d\n", fare); 
+        fare1 = distance * 6;
+        printf("fare : %d\n", fare1); 
     }
     else if (distance >= 21 && distance <=30){
-        fare= distance * 5;
-        printf("fare : %d\n", fare);
+        fare2= distance * 5;
+        printf("fare : %d\n", fare2);
     }
     else if (distance >=31) {
-        fare = distance * 4;
-        printf("fare : %d\n", fare);
+        fare3 = distance * 4;
+        printf("fare : %d\n", fare3);
     }
     return 0;
 }

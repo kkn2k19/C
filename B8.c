@@ -47,6 +47,6 @@ int main ()
         na=100;
     }
 
-    printf ("Electricity Bill for the id no.: %d.\nCustomer name: %c\nunit consumed: %d\nAmount Charged: %f\nSubcharge Amount: %f\nNet Payable Amount: %f", id,name,uc,am,sa,na);
+    printf ("Electricity Bill for the id no.: %d.\nCustomer name: %c\nunit consumed: %d\nAmount Charged: %f\nSurcharge Amount: %f\nNet Payable Amount: %f", id,name,uc,am,sa,na);
     return 0;
 }

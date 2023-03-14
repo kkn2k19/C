@@ -10,19 +10,19 @@ int main ()
     scanf("%d %d", &x, &y);
     if (x>0 && y>0)
     {
-        printf("Quadrant-I\n");
+        printf("Quadrant-I");
     }
     else if (x<0 && y>0)
     {
-        printf("Quadrant-II\n");
+        printf("Quadrant-II");
     }
             else if (x<0 && y<0)
             {
-                printf("Quadrant-III\n");
+                printf("Quadrant-III");
             }
                     else
                     {
-                        printf("Quadrant-IV\n");
+                        printf("Quadrant-IV");
                     }
     return 0;
 }
