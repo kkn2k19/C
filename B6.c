@@ -7,7 +7,7 @@ sin(1/x) using 4-decimal places.*/
     double x, b;
     printf("Enter value of x : ");
     scanf("%lf", &x);
-    b= Sin(1/x);
+    b= sin(1/x);
     printf("Value of sin(1/x) is %.4lf\n", b);
     return 0;
  }
