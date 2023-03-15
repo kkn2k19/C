@@ -13,7 +13,7 @@ table given above.*/
 #include <stdio.h>
 
 int main() {
-    int age;
+    int age; char name;
     float taxable_income, income_tax;
 
     printf("Enter your age: ");
@@ -40,7 +40,7 @@ int main() {
         income_tax = (taxable_income - 1000000) * 0.3 + 94000;
     }
 
-    printf("Name: <insert name here>\n");
+    printf("Name: %s\n", name);
     printf("Age: %d\n", age);
     printf("Taxable income: %.2f\n", taxable_income);
     printf("Income tax payable: %.2f\n", income_tax);
