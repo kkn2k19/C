@@ -9,19 +9,17 @@ int main() {
     
     // check if the number is divisible by any number other than 1 and itself
     count = 0;
-    for(i=2; i<=num/2; ++i) {
+    for(i=1; i<=num; ++i) {
         if(num%i == 0) {
             count++;
         }
     }
-    
-    if(num == 1) {
-        printf("1 is not a prime number.\n");
-    }
-    else {
-        if(count == 2)
+    if(count == 2)
+    {
             printf("%d is a prime number.\n", num);
-        else
+    }
+    else
+    {
             printf("%d is not a prime number.\n", num);
     }
     return 0;
