@@ -3,15 +3,15 @@
 #include <stdio.h>
 
 int main() {
-    int num, i, flag = 0;
+    int num, i, count;
     printf("Enter a number: ");
     scanf("%d", &num);
     
     // check if the number is divisible by any number other than 1 and itself
+    count = 0;
     for(i=2; i<=num/2; ++i) {
         if(num%i == 0) {
-            flag = 1;
-            break;
+            count++;
         }
     }
     
@@ -19,7 +19,7 @@ int main() {
         printf("1 is not a prime number.\n");
     }
     else {
-        if(flag == 0)
+        if(count == 2)
             printf("%d is a prime number.\n", num);
         else
             printf("%d is not a prime number.\n", num);
