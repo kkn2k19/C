@@ -5,36 +5,29 @@ Expected Output :
 [11] [13] [17] [19] [23].*/
 
 #include <stdio.h>
-#include <stdbool.h>
 
-bool isPrime(int num);
-
-int main() {
-    int M, N;
+int main()
+{
+    int i, c, M, N;
     printf("Enter M and N: ");
     scanf("%d %d", &M, &N);
 
     printf("Prime numbers between %d and %d are: ", M, N);
 
-    for (int i = M; i <= N; i++) {
-        if (isPrime(i)) {
-            printf("[%d] ", i);
+    for (i = M; i <= N; i++) 
+    {
+        c=0;
+        for (i=1; i<=N; i++)
+        {
+            if (N%i==0)
+            {
+                c++;
+            }
+            if (c==2)
+            {
+                printf("%d", N);
+            }
         }
     }
-
     return 0;
-}
-
-bool isPrime(int num) {
-    if (num <= 1) {
-        return false;
-    }
-
-    for (int i = 2; i <= num / 2; i++) {
-        if (num % i == 0) {
-            return false;
-        }
-    }
-
-    return true;
 }

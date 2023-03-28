@@ -10,15 +10,16 @@ int main() {
    scanf("%d", &n);
 
    printf("The first %d natural numbers are: ", n);
-   for(i=1; i<=n; i++) {
+   for(i=1; i<=n; i++) 
+   {
       printf("%d ", i);
       sum += i;
    }
 
    average = (float)sum / n;
 
-   printf("\n\nThe sum of first %d natural numbers is: %d", n, sum);
-   printf("\nThe average of first %d natural numbers is: %.2f", n, average);
+   printf("\nThe sum of first %d natural numbers is: %d", n, sum);
+   printf("\nThe average of first %d natural numbers is: %f", n, average);
 
    return 0;
 }

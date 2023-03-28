@@ -18,11 +18,13 @@ int main()
 
     printf("Multiplication table from 1 to %d\n", n);
 
-    for(i = 1; i <= 10; i++) {
-        for(j = 1; j <= n; j++) {
+    for(i = 1; i <=10; i++) {              //i for 1 to 10 & j for 1 to the number whose table is required.
+        for(j = 1; j <= n; j++) {           
             printf("%dx%d = %d", j, i, j*i);
-            if(j != n)
-                printf(", ");
+            if(j != n)  
+            {
+                printf(",\t");
+            }
         }
         printf("\n");
     }

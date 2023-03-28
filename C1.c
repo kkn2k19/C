@@ -27,7 +27,7 @@ int main() {
         }
     }
 
-    printf("Total number of “ODD” numbers: %d\n", odd);
-    printf("Total number of “EVEN” numbers:%d\n", even);
+    printf("Total number of Odd numbers: %d\n", odd);
+    printf("Total number of Even numbers:%d\n", even);
     return 0;
 }

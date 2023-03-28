@@ -8,25 +8,14 @@ Factorial of 5 is =120*/
 
 int main()
 {
-    int num, i;
-    unsigned long long factorial = 1;
-
+    int n, i, f;
     printf("Enter a number: ");
-    scanf("%d", &num);
-
-    // If the input number is negative
-    if (num < 0)
+    scanf("%d", &n);
+    f = 1;
+    for (i = 1; i <= n; ++i)
     {
-        printf("Error: Factorial of negative number doesn't exist.");
+        f=f*i;
     }
-    else
-    {
-        for (i = 1; i <= num; ++i)
-        {
-            factorial *= i;
-        }
-        printf("Factorial of %d = %llu", num, factorial);
-    }
-
+    printf("Factorial of %d = %d", n, f);
     return 0;
 }

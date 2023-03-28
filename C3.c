@@ -2,25 +2,26 @@
 
 #include <stdio.h>
 
-int main() {
-    int num, i, count;
+int main() 
+{
+    int n, i, c;
     printf("Enter a number: ");
-    scanf("%d", &num);
-    
-    // check if the number is divisible by any number other than 1 and itself
-    count = 0;
-    for(i=1; i<=num; ++i) {
-        if(num%i == 0) {
-            count++;
+    scanf("%d", &n);
+    c=0;
+    for (i=1; i<=n; i++)
+    {
+        if (n%i==0)
+        {
+            c++;
         }
     }
-    if(count == 2)
+    if (c==2)
     {
-            printf("%d is a prime number.\n", num);
+        printf("The number %d is a prime number.", n);
     }
     else
     {
-            printf("%d is not a prime number.\n", num);
+        printf("The number %d is not a prime number.", n);
     }
     return 0;
 }
