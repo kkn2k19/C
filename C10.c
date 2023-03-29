@@ -9,16 +9,19 @@ Here is the Fibonacci series upto to 10 terms :
 
 #include <stdio.h>
 
-int main()
+int main ()
 {
-    int i, n, f;
-    printf("Provide a number : ");
-    scanf("%d", &n);
-    f=1;
-    for (i=1; i<=n; i++)
-    {
-        f=f*i;
-    }
-    printf("Factorial of %d = %d", n, f);
-    return 0;
+  int a, b, i, n, result;
+  printf("provide number : ");
+  scanf("%d", &n);
+  a=0;
+  b=1;
+  for (i=1; i<=n; i++)
+  {
+    printf("%d", a);
+    result = a+b;
+    a=b;
+    b=result;
+  }
+  return 0;
 }
