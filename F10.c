@@ -9,9 +9,9 @@ sorted arrays and make a resultant array which will be also sorted.
 int main() {
   int s1, s2, s3;
   printf("\n Enter the size of 1st array  ");
-  scanf("%d", & s1);
+  scanf("%d", &s1);
   printf("\n Enter the size of 2nd array ");
-  scanf("%d", & s2);
+  scanf("%d", &s2);
   s3 = s1 + s2;
   printf("\n Enter the elements of 1st array\n");
   int arr1[s1], arr2[s2], arr3[s3];
