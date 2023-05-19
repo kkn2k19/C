@@ -20,9 +20,9 @@ int main ()
     scanf ("%d", &n);
     printf("The Positive Divisor : ");
 
-    for (i=1; i<=n; i++)
+    s=0;
+    for (i=1; i<n; i++)
     {
-        s=0;
         if (n%i==0)
         {
             printf("%d ", i);
