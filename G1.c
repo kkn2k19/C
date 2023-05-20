@@ -8,11 +8,8 @@ void main()
 {
   int arr1[3][3],i,j;
   
-       printf("\n\nRead a 2D array of size 3x3 and print the matrix :\n");
-       printf("------------------------------------------------------\n");  
-  
- 
-    /* Stored values into the array*/
+       printf("\nRead a 2D array of size 3x3 and print the matrix :\n"); 
+
        printf("Input elements in the matrix :\n");
   for(i=0;i<3;i++)
   {
