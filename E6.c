@@ -1,26 +1,22 @@
-#include<stdio.h>
+#include <stdio.h>
 
-int main()
+void main()
 {
-printf("Enter the number of rows to show the star pattern:  ");
-int n, x,  y,  s = 1, k;
-scanf("%d",&n);
-for(x = 0; x <= n; x++)
-{
-for(y = n; y > x; y--)
-{
-printf(" ");
-}
-printf("*");
-if (x > 0)
-{
-for(k = 1; k <= s;  k++)
-{
-printf(" ");
-}
-s += 2;
-printf("*");
-}
-printf("\n");
-}
+   int i,j,n;
+   printf("Input number of rows : ");
+   scanf("%d",&n);
+   for(i=1;i<=n;i++)
+   {
+     for(j=1;j<=n-i;j++)
+	printf(" ");
+	printf("*");
+	
+	if(i>1){
+	  for(j=1;j<=2*i-3;j++)
+       printf(" ");
+       printf("*");
+	}
+
+     printf("\n");
+   }
 }
