@@ -6,7 +6,7 @@
 int main()
 {
     int n, i;
-    long int term = 9, sum = 0;
+    int a = 9, s = 0;
 
     printf("Enter the number of terms: ");
     scanf("%d", &n);
@@ -14,12 +14,14 @@ int main()
     printf("Series: ");
     for(i = 1; i <= n; i++)
     {
-        printf("%ld + ", term);
-        sum += term;
-        term = term * 10 + 9;
+        printf("%d", a);
+        if (i<n)
+        printf(" + ");
+        s += a;
+        a = a * 10 + 9;
     }
 
-    printf("\nSum of the series up to %d terms: %ld\n", n, sum);
+    printf("\nSum of the series up to %d terms: %d\n", n, s);
 
     return 0;
 }
