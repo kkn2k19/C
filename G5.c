@@ -21,7 +21,7 @@ for (i=0; i<n; i++){
   }
   printf("\n");
 }
-printf("The sum of rows and columns of the matrix is : %d\n");
+printf("The sum of rows and columns of the matrix is : \n");
 for (i=0; i<n; i++){
   s=0;
   for (j=0; j<n; j++){
