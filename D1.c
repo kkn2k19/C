@@ -16,7 +16,10 @@ int main()
     printf("Harmonic Series: ");
     for(i = 1; i <= n; i++)
     {
-        printf("1/%d + ", i);
+        printf("1/%d", i);
+        if (i<n)
+        printf(" + ");
+        
         sum += 1.0/i;
     }
 
