@@ -9,64 +9,38 @@ e. Check whether the inputted number is an Armstrong number or not.
 */
 
 #include <stdio.h>
-#include <math.h>
 
 int main()
 {
-    int num, temp, digit, count = 0, sum = 0, rev = 0, arm = 0;
+    int n, i, d, c = 0, s = 0, r = 0, a = 0;
 
     printf("Enter an integer number: ");
-    scanf("%d", &num);
+    scanf("%d", &n);
 
-    // Counting the number of digits
-    temp = num;
-    while(temp != 0)
-    {
-        count++;
-        temp /= 10;
-    }
-    printf("Total number of digits: %d\n", count);
-
-    // Summation of all the digits
-    temp = num;
-    while(temp != 0)
-    {
-        digit = temp % 10;
-        sum += digit;
-        temp /= 10;
-    }
-    printf("Sum of all digits: %d\n", sum);
-
-    // Reversing the number
-    temp = num;
-    while(temp != 0)
-    {
-        digit = temp % 10;
-        rev = rev * 10 + digit;
-        temp /= 10;
-    }
-    printf("Reverse of the number: %d\n", rev);
-
-    // Checking for palindrome number
-    if(num == rev)
+for (i=n; i>0; i=i/10){
+    d=i%10;
+    c=c+1;
+    s=s+d;
+    r=(r*10)+d;
+}
+    
+    printf("Total number of digits: %d\n", c);
+    printf("Sum of all digits: %d\n", s);
+    printf("Reverse of the number: %d\n", r);
+    if(n == r)
         printf("The number is a palindrome number.\n");
     else
         printf("The number is not a palindrome number.\n");
 
-    // Checking for Armstrong number
-    temp = num;
-    while(temp != 0)
+    for(i=n; i>0; i=i/10)
     {
-        digit = temp % 10;
-        arm += pow(digit, count);
-        temp /= 10;
+        d = i % 10;
+        a = a+pow(d, c);
     }
-    if(num == arm)
+    if(n == a)
         printf("The number is an Armstrong number.\n");
     else
         printf("The number is not an Armstrong number.\n");
 
     return 0;
 }
-
-
