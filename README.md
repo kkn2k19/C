@@ -1,4 +1,6 @@
-# CS_assignments_Sem2
+COLLEGE ASSIGNMENTS CS SEM2
+
+contributions-- @kkn2k19, @cde
 
 Language Used--C programming 
 
