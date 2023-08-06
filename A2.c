@@ -10,5 +10,5 @@
 
 int main ()
 {
-    printf("I\nIN\nIND\nINDI\nINA\nINDIAN");
+    printf("I\nIN\nIND\nINDI\nINDIA\nINDIAN");
 }
