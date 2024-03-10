@@ -1,0 +1,12 @@
+1.     for (int i = 1; i<=n; i++){
+            ------------------         //something to do
+            }
+            
+            
+2.     while (condition){
+             --------------------// something to do
+             }
+             
+3.     do{ 
+          ----------------     //something to do
+          }  while (condition);
